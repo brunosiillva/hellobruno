@@ -79,7 +79,7 @@ $(function(){ //Dessa forma é igual ao .ready();
 });
 
 $(window).resize(function() {
-	alturaJobs();
+	//alturaJobs();
 	allHeightSobre();
 });
 
