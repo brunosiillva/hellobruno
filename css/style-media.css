@@ -1,0 +1,90 @@
+@media (max-width: 480px) {
+	h1{
+		font-size: 48px;
+	}
+	h2{
+		font-size: 36px;
+	}
+	h3{
+		font-size: 24px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	.overlay nav.overlay-menu{
+		font-size: 40px;
+	}
+	#banner h2{
+		font-size: 40px;
+	}
+	#sobre{
+		height: auto;
+		padding-top: 40px;
+	}
+	#sobre img{
+		margin-bottom: 20px;
+	}
+	#sobre.pagesobre img{
+		margin: 0 auto 20px;
+		float: inherit;
+	}
+	#sobre p{
+		text-align: center;
+	}
+	#sobre strong{
+		display: block;
+		text-align: center;
+	}
+	.midias{
+		text-align: center;
+	}
+	#jobs{
+		height: 100%;
+		max-height: 100%;
+	}
+	#jobs ul li.small, #jobs ul li.big{
+		height: 200px;
+	}
+	#contato{
+		padding: 20px;
+	}
+	#contato.pagecontato{
+		margin-bottom: 120px;
+		max-height: auto;
+	}
+	.pagecontato form{
+		margin-bottom: 40px;
+	}
+	.pagecontato .midias a i{
+		margin: 10px;
+	}
+	.font-color.animate, .apr.animate{
+		opacity: 1;
+	}
+}
+@media (max-width: 768px){
+	#sobre.pagesobre .titulo{
+		height: 250px;
+	}
+	#sobre.pagesobre img{
+		position: inherit;
+		left: 0;
+		float: left;
+		margin-right: 40px;
+		margin-bottom: 40px;
+	}
+	.pagesobre .bgwhite{
+		padding: 50px;
+	}
+}
+@media (min-width: 769px){
+	#sobre img{
+		max-width: 230px;
+		left: -256px;
+	}
+}
+@media (min-width: 992px){
+	.pagesobre .bgwhite{
+		padding: 50px;
+	}
+}
