@@ -375,10 +375,10 @@ a.arrow-goto{
 #jobs ul li.small{
 	height: 350px;
 }
-#jobs ul li.small img{
+/*#jobs ul li.small img{
 	height: 350px;
 	object-fit: cover;
-}
+}*/
 #jobs ul li.big{
 	height: 700px;
 }
