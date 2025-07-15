@@ -4,10 +4,10 @@
   right: 25px;
   cursor: pointer;
   z-index: 100;
-  transition: opacity .25s ease;
+  transition: opacity 0.25s ease;
   padding: 10px;
 }
-.button_container:after{
+.button_container:after {
   display: block;
   position: absolute;
   top: 0;
@@ -17,15 +17,16 @@
   margin: auto;
   width: 100%;
   height: 1px;
-  content: '.';
+  content: ".";
   color: transparent;
   background: #ff5353;
   visibility: none;
   opacity: 0;
   z-index: -1;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.button_container.color:after, .button_container.coloractive:after{
+.button_container.color:after,
+.button_container.coloractive:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
@@ -40,7 +41,7 @@
   vertical-align: top;
 }
 .button_container .menu {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   color: #fff;
   font-size: 24px;
   margin-right: 10px;
@@ -62,25 +63,25 @@
 }*/
 .button_container.active .top {
   transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #FFF;
+  background: #fff;
 }
 .button_container.active .middle {
   opacity: 0;
-  background: #FFF;
+  background: #fff;
 }
 .button_container.active .bottom {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FFF;
+  background: #fff;
 }
 .button_container span {
-  background: #FFF;
+  background: #fff;
   border: none;
   height: 5px;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  transition: all .35s ease;
+  transition: all 0.35s ease;
   cursor: pointer;
 }
 .button_container span:nth-of-type(2) {
@@ -91,14 +92,14 @@
 }
 .overlay {
   position: fixed;
-  background: #FF5252;
+  background: #ff5252;
   top: 0;
   left: 0;
   width: 100%;
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
   z-index: 99;
 }
@@ -108,17 +109,17 @@
   height: 100%;
 }
 .overlay.open li {
-  animation: fadeInRight .5s ease forwards;
-  animation-delay: .35s;
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
 }
 .overlay.open li:nth-of-type(2) {
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 .overlay.open li:nth-of-type(3) {
-  animation-delay: .45s;
+  animation-delay: 0.45s;
 }
 .overlay.open li:nth-of-type(4) {
-  animation-delay: .50s;
+  animation-delay: 0.5s;
 }
 .overlay nav {
   position: relative;
@@ -147,10 +148,10 @@
   position: relative;
 }
 .overlay ul li a {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   display: block;
   position: relative;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   overflow: hidden;
 }
@@ -160,13 +161,13 @@
   width: 100%;
 }
 .overlay ul li a:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 0%;
   transform: translateX(-50%);
   height: 3px;
-  background: #FFF;
-  transition: .35s;
+  background: #fff;
+  transition: 0.35s;
 }

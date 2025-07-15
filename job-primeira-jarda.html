@@ -1,165 +1,302 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Language" content="pt-br">
-	<title>Hello Bruno!</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Language" content="pt-br" />
+    <title>Hello Bruno!</title>
 
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-	<link rel="manifest" href="images/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ff5353">
-	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ff5353">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ff5353" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ff5353" />
 
-	<link href="https://fonts.googleapis.com/css?family=Catamaran:700|Roboto+Slab:300,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/resets.css">
-	<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/jobs.css">
-	<link rel="stylesheet" href="css/style-media.css">
-	<link rel="stylesheet" href="css/nav.css">
-	<link rel="stylesheet" href="lib/css/bootstrap-grid.css">
-  <link rel="stylesheet" href="lib/css/bootstrap-carousel.css">
-  <link rel="stylesheet" href="lib/css/scroll-animate.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:700|Roboto+Slab:300,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/resets.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jobs.css" />
+    <link rel="stylesheet" href="css/style-media.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="lib/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="lib/css/bootstrap-carousel.css" />
+    <link rel="stylesheet" href="lib/css/scroll-animate.css" />
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script src="https://use.fontawesome.com/8d855dcf0c.js"></script>
-  <!--<script src="js/load.js"></script>-->
-  <script src="lib/js/scroll-animate.js"></script>
-	<script src="lib/js/parallax.min.js"></script>
-	<script src="lib/js/typed.min.js"></script>
-  <script src="lib/js/bootstrap-carousel.js"></script>
-</head>
-<body id="job">
-<div class="logo-topo"><a href="index.html">BS.</a></div>
-<div class="button_container" id="toggle">
-	<div class="menu">Menu</div>
-	<div class="hamb">
-		<span class="top"></span>
-		<span class="middle"></span>
-		<span class="bottom"></span>
-	</div>
-</div>
-
-<div class="overlay" id="overlay">
-	<nav class="overlay-menu">
-		<ul>
-			<li ><a href="index.html">home</a></li>
-			<li><a href="sobre.html">sobre</a></li>
-			<li><a href="jobs.html">jobs</a></li>
-			<li><a href="contato.html">contato</a></li>
-		</ul>
-	</nav>
-</div>
-<main>
-  <div class="topo primeira-jarda alturaScroll">
-    <div class="container">
-      <img src="images/jobs/primeira-jarda/logo-primeira-jarda.svg" alt="Logo Primeira Jarda" class="logo-job img-responsive">
-      <h2 class="white">< sobre/ ></h2>
-      <p class="col-md-10 col-sm-12 col-xs-12">O projeto <strong>Primeira Jarda</strong> surgiu da ideia de explicar um pouco sobre o Futebol Americano, esporte que vem crescendo e ganhando cada vez mais popularidade no Brasil, de uma forma simples e ilustrativa.</p>
-      <p class="col-md-10 col-sm-12 col-xs-12">O projeto tambem foi desenvolvido com o intuito de aprender um pouco mais sobre programação front-end e sobre o framework <strong>AngularJS além de aplicar alguns conceitos de Design para web.</strong></p>
-      <img src="images/jobs/primeira-jarda/tela-1-primeira-jarda.png" alt="" class="img-responsive">
-    </div>
-  </div>
-  <div class="font-color animate to-top">
-    <div class="container">
-      <div class="col-md-6 font">
-        <h3>font font-family</h3>
-        <p><strong>Roboto Slab</strong></p>
-        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-        <p>1 2 3 4 5 6 7 8 9 0 ! @ # $ % & * ( )</p>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/8d855dcf0c.js"></script>
+    <!--<script src="js/load.js"></script>-->
+    <script src="lib/js/scroll-animate.js"></script>
+    <script src="lib/js/parallax.min.js"></script>
+    <script src="lib/js/typed.min.js"></script>
+    <script src="lib/js/bootstrap-carousel.js"></script>
+  </head>
+  <body id="job">
+    <div class="logo-topo"><a href="index.html">BS.</a></div>
+    <div class="button_container" id="toggle">
+      <div class="menu">Menu</div>
+      <div class="hamb">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
       </div>
-      <div class="col-md-6 color">
-        <h3>color palette</h3>
-        <div class="box">
-          <div class="cl" style="background-color: #882377;"></div>
-          <p><strong>#882377</strong></p>
-        </div>
-        <div class="box">
-          <div class="cl" style="background-color: #1d378e;"></div>
-          <p><strong>#1D378E</strong></p>
-        </div>
-        <div class="box">
-          <div class="cl" style="background-color: #2A153E;"></div>
-          <p><strong>#2A153E</strong></p>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="apr animate to-top">
-    <div class="container">
-      <h2>< home page/ ></h2>
-      <p class="col-md-10 col-sm-12 col-xs-12">A Home Page do site traz os principais assuntos que mais surgem dúvidas de quem não conhecem o esporte, como o jogo funciona e quais são esses equipamentos tão diferentes que os jogadores utilizam durante os jogos.</p>
-      <img src="images/jobs/primeira-jarda/tela-2-primeira-jarda.png" alt="" class="img-responsive">
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="sobre.html">sobre</a></li>
+          <li><a href="jobs.html">jobs</a></li>
+          <li><a href="contato.html">contato</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  <div class="apr animate to-top primeira-jarda">
-    <div class="container">
-      <h2>< o jogo/ ></h2>
-      <!-- <p class="col-md-10 col-sm-12 col-xs-12 white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
-      <img src="images/jobs/primeira-jarda/tela-3-primeira-jarda.png" alt="" class="img-responsive">
-    </div>
-  </div>
-  <div class="apr animate to-top">
-    <div class="container">
-      <h2>< os equipamentos/ ></h2>
-      <!-- <p class="col-md-10 col-sm-12 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
-      <img src="images/jobs/primeira-jarda/tela-4-primeira-jarda.png" alt="" class="img-responsive">
-    </div>
-  </div>
-  <div class="apr animate to-top primeira-jarda">
-    <div class="container">
-      <h2>< os jogadores/ ></h2>
-      <!-- <p class="col-md-10 col-sm-12 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
-      <div id="slider-jobs" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="images/jobs/primeira-jarda/tela-5-primeira-jarda.png" alt="" class="img-responsive">
-          </div>
-          <div class="item">
-            <img src="images/jobs/primeira-jarda/tela-51-primeira-jarda.png" alt="" class="img-responsive">
-          </div>
-          <div class="item">
-            <img src="images/jobs/primeira-jarda/tela-52-primeira-jarda.png" alt="" class="img-responsive">
-          </div>
-        </div>
-        <a class="left carousel-control" href="#slider-jobs" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-        </a>
-        <a class="right carousel-control" href="#slider-jobs" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-        </a>
-      </div>
-      <h2>< os termos/ ></h2>
-      <!-- <p class="col-md-10 col-sm-12 col-xs-12 white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
-      <img src="images/jobs/primeira-jarda/tela-6-primeira-jarda.png" alt="" class="img-responsive">
-      <div class="visite">
+    <main>
+      <div class="topo primeira-jarda alturaScroll">
         <div class="container">
-          <h2><a href="http://www.primeirajarda.com.br" target="_blank">Visite o Site</a></h2>
+          <img
+            src="images/jobs/primeira-jarda/logo-primeira-jarda.svg"
+            alt="Logo Primeira Jarda"
+            class="logo-job img-responsive"
+          />
+          <h2 class="white">< sobre/ ></h2>
+          <p class="col-md-10 col-sm-12 col-xs-12">
+            O projeto <strong>Primeira Jarda</strong> surgiu da ideia de
+            explicar um pouco sobre o Futebol Americano, esporte que vem
+            crescendo e ganhando cada vez mais popularidade no Brasil, de uma
+            forma simples e ilustrativa.
+          </p>
+          <p class="col-md-10 col-sm-12 col-xs-12">
+            O projeto tambem foi desenvolvido com o intuito de aprender um pouco
+            mais sobre programação front-end e sobre o framework
+            <strong
+              >AngularJS além de aplicar alguns conceitos de Design para
+              web.</strong
+            >
+          </p>
+          <img
+            src="images/jobs/primeira-jarda/tela-1-primeira-jarda.png"
+            alt=""
+            class="img-responsive"
+          />
         </div>
       </div>
-    </div>
-  </div>
-</main>
-<div class="clearfix"></div>
-<footer>
-	<div class="simbol">BS.</div>
-	<div class="copy">todos direitos reservados - 2017 &copy;</div>
-</footer>
-<script src="js/custom.js"></script>
-</body>
+      <div class="font-color animate to-top">
+        <div class="container">
+          <div class="col-md-6 font">
+            <h3>font font-family</h3>
+            <p><strong>Roboto Slab</strong></p>
+            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+            <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            <p>1 2 3 4 5 6 7 8 9 0 ! @ # $ % & * ( )</p>
+          </div>
+          <div class="col-md-6 color">
+            <h3>color palette</h3>
+            <div class="box">
+              <div class="cl" style="background-color: #882377"></div>
+              <p><strong>#882377</strong></p>
+            </div>
+            <div class="box">
+              <div class="cl" style="background-color: #1d378e"></div>
+              <p><strong>#1D378E</strong></p>
+            </div>
+            <div class="box">
+              <div class="cl" style="background-color: #2a153e"></div>
+              <p><strong>#2A153E</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="apr animate to-top">
+        <div class="container">
+          <h2>< home page/ ></h2>
+          <p class="col-md-10 col-sm-12 col-xs-12">
+            A Home Page do site traz os principais assuntos que mais surgem
+            dúvidas de quem não conhecem o esporte, como o jogo funciona e quais
+            são esses equipamentos tão diferentes que os jogadores utilizam
+            durante os jogos.
+          </p>
+          <img
+            src="images/jobs/primeira-jarda/tela-2-primeira-jarda.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+      </div>
+      <div class="apr animate to-top primeira-jarda">
+        <div class="container">
+          <h2>< o jogo/ ></h2>
+          <!-- <p class="col-md-10 col-sm-12 col-xs-12 white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
+          <img
+            src="images/jobs/primeira-jarda/tela-3-primeira-jarda.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+      </div>
+      <div class="apr animate to-top">
+        <div class="container">
+          <h2>< os equipamentos/ ></h2>
+          <!-- <p class="col-md-10 col-sm-12 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
+          <img
+            src="images/jobs/primeira-jarda/tela-4-primeira-jarda.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+      </div>
+      <div class="apr animate to-top primeira-jarda">
+        <div class="container">
+          <h2>< os jogadores/ ></h2>
+          <!-- <p class="col-md-10 col-sm-12 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
+          <div id="slider-jobs" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img
+                  src="images/jobs/primeira-jarda/tela-5-primeira-jarda.png"
+                  alt=""
+                  class="img-responsive"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="images/jobs/primeira-jarda/tela-51-primeira-jarda.png"
+                  alt=""
+                  class="img-responsive"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="images/jobs/primeira-jarda/tela-52-primeira-jarda.png"
+                  alt=""
+                  class="img-responsive"
+                />
+              </div>
+            </div>
+            <a
+              class="left carousel-control"
+              href="#slider-jobs"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"
+                ><i class="fa fa-chevron-left" aria-hidden="true"></i
+              ></span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#slider-jobs"
+              role="button"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"
+                ><i class="fa fa-chevron-right" aria-hidden="true"></i
+              ></span>
+            </a>
+          </div>
+          <h2>< os termos/ ></h2>
+          <!-- <p class="col-md-10 col-sm-12 col-xs-12 white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar lectus sagittis turpis laoreet rhoncus. Nullam orci dui, pellentesque ut libero id, faucibus blandit lectus. Integer scelerisque neque ex, eu posuere dui posuere eu. Aenean nunc magna, gravida eget lorem ut, tempus maximus purus. </p> -->
+          <img
+            src="images/jobs/primeira-jarda/tela-6-primeira-jarda.png"
+            alt=""
+            class="img-responsive"
+          />
+          <div class="visite">
+            <div class="container">
+              <h2>
+                <a href="http://www.primeirajarda.com.br" target="_blank"
+                  >Visite o Site</a
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="clearfix"></div>
+    <footer>
+      <div class="simbol">BS.</div>
+      <div class="copy">todos direitos reservados - 2017 &copy;</div>
+    </footer>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
