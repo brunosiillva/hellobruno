@@ -9,28 +9,11 @@ function alturaJobs() {
 }
 
 function scroolMenu() {
-  var ScroolH = $(window).scrollTop();
-  var alturaTopo = $(".alturaScroll").height();
-
-  if (ScroolH > alturaTopo - 20) {
-    $(".button_container").addClass("color");
-    $(".logo-topo").css("display", "none");
-  } else {
-    $(".button_container").removeClass("color");
-    $(".logo-topo").css("display", "block");
-  }
+  console.log("scroolMenu function");
 }
 
 function scroolMenuJob() {
-  var ScroolH = $(window).scrollTop();
-
-  if (ScroolH > 680) {
-    $("#job .button_container").addClass("color");
-    $("#job .logo-topo").css("display", "none");
-  } else {
-    $("#job .button_container").removeClass("color");
-    $("#job .logo-topo").css("display", "block");
-  }
+  console.log("scroolMenuJob function");
 }
 
 function scrollSmoth() {
@@ -55,15 +38,6 @@ function scrollSmoth() {
   });
 }
 
-function allHeightSobre() {
-  var largura = $(window).width();
-  var alturaAll = $(".bgwhite").outerHeight();
-  if (largura > 768) {
-    $(".pagesobre").css("height", alturaAll);
-    $(".titulo").css("height", alturaAll);
-  }
-}
-
 $(function () {
   //Dessa forma é igual ao .ready();
   $(".typed").typed({
@@ -83,12 +57,10 @@ $(function () {
   scroolMenu();
   scroolMenuJob();
   scrollSmoth();
-  allHeightSobre();
 });
 
 $(window).resize(function () {
   //alturaJobs();
-  allHeightSobre();
 });
 
 $(window).scroll(function () {
