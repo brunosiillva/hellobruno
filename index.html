@@ -1,258 +1,287 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Language" content="pt-br" />
-    <title>Hello Bruno!</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <title>Bruno Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="images/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="images/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="images/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="images/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="images/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="images/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="images/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="images/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="images/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="images/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ff5353" />
-    <meta
-      name="msapplication-TileImage"
-      content="images/favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ff5353" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Catamaran:700|Martel:300"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/resets.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-media.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="lib/css/bootstrap-grid.css" />
-
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://use.fontawesome.com/8d855dcf0c.js"></script>
-    <!--<script src="js/load.js"></script>-->
-    <script src="lib/js/parallax.min.js"></script>
-    <script src="lib/js/typed.min.js"></script>
   </head>
   <body>
-    <div class="logo-topo"><a href="index.html">BS.</a></div>
-    <div class="button_container" id="toggle">
-      <div class="menu">Menu</div>
-      <div class="hamb">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">BS</a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
-    <div class="overlay" id="overlay">
-      <nav class="overlay-menu">
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="sobre.html">sobre</a></li>
-          <li><a href="jobs.html">jobs</a></li>
-          <li><a href="contato.html">contato</a></li>
-        </ul>
-      </nav>
-    </div>
-    <main>
-      <section id="banner" class="alturaScroll">
-        <div class="flex">
-          <div class="flex-item">
-            <div class="container">
-              <h2><span>hello</span> <span class="typed"></span></h2>
-              <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12 text">
-                  <p>
-                    "Criatividade é inventar, experimentar, crescer, correr
-                    riscos, quebrar regras, cometer erros, e se divertir."
-                    <strong>- Mary Lou Cook</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#sobre" class="arrow-goto anchor">
-            <div class="round-border">
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section id="sobre">
-        <div class="triangulo"></div>
-        <div class="flex">
-          <div class="flex-item">
-            <div class="container">
-              <small>um pouco sobre</small>
-              <h2>bruno/silva</h2>
-              <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                  <img
-                    class="img-responsive"
-                    src="images/foto-bruno-silva.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                  <p><strong>Olá, eu sou Bruno</strong></p>
-                  <p>
-                    Designer por formação e desenvolvedor front-end por paixão
-                    conheçe desde conceitos visuais aplicados a web até
-                    <span class="destaque">pré-processadores</span> passando por
-                    SEO, usabilidade e experiencia do usuário. Profissional
-                    responsável e pró-ativo dedicando-se ao máximo nos projetos
-                    envolvido, sempre a procura de aprender coisas nova.
-                  </p>
-                  <div class="midias">
-                    <a
-                      href="https://www.facebook.com/bruno.art.silva"
-                      target="_blank"
-                      class=""
-                      ><i
-                        class="fa fa-facebook round-border"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
-                    <a
-                      href="https://www.instagram.com/bruno.si/"
-                      target="_blank"
-                      class=""
-                      ><i
-                        class="fa fa-instagram round-border"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
-                    <!--<a href="google" target="_blank" class=""><i class="fa fa-google-plus round-border" aria-hidden="true"></i></a>-->
-                    <a
-                      href="https://github.com/brunosiillva/"
-                      target="_blank"
-                      class=""
-                      ><i
-                        class="fa fa-github round-border"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Bruno Silva</h1>
+          <p class="hero-subtitle">
+            Product Designer | Design Ops | Design System
+          </p>
+          <p class="hero-description">
+            Apaixonado por criar experiências digitais que encantam e funcionam
+            de verdade. Com uma abordagem colaborativa, organizada e ágil,
+            transformo produtos em soluções intuitivas, acessíveis e centradas
+            nas pessoas. Para mim, design vai além da estética, é sobre resolver
+            problemas e tornar a tecnologia mais humana.
+          </p>
+          <p class="hero-description">
+            <i>
+              “Criatividade é inventar, experimentar, crescer, correr riscos,
+              quebrar regras, cometer erros, e se divertir.” </i
+            ><br />
+            - Mary Lou Cook
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn-primary">Sobre mim</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
           </div>
         </div>
-      </section>
-      <section id="jobs">
-        <small>alguns</small>
-        <h2>jobs</h2>
-        <ul>
-          <div class="no-pa col-md-4 col-sm-6 col-xs-12">
-            <a href="job-primeira-jarda.html">
-              <li class="small">
-                <h3>WEBSITE - Primeira Jarda</h3>
-                <img
-                  src="images/jobs/primeira-jarda/thumb-02-primeira-jarda.jpg"
-                  alt="Thumbnail Website Primeira Jarda"
-                  class="img-responsive"
-                />
-              </li>
-            </a>
+        <div class="hero-image">
+          <img class="profile-image" src="images/foto-bruno-silva.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sobre mim</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="lead">
+              Sou Product Designer com sólida base em design de experiência
+              (user experience) e um diferencial técnico raro: tenho experiência
+              prática em frontend, o que me permite trabalhar lado a lado com
+              times de engenharia, entregando soluções reais com mais agilidade
+              e qualidade.
+            </p>
+            <p>
+              Iniciei minha carreira em agências e times de marketing, mas foi
+              em 2018 que mergulhei definitivamente no universo de produtos
+              digitais. Desde então, venho atuando em diferentes frentes, design
+              de ferramentas internas, evolução de design systems e, mais
+              recentemente, como Product Manager de plataforma de engenharia.
+            </p>
+            <p>
+              Na RD Station, ajudei a construir e escalar o design system da
+              empresa, apoiando outros designers e desenvolvedores a criarem
+              interfaces consistentes e acessíveis. Também contribui no
+              desenvolvimento de ferramentas internas e soluções voltadas para
+              melhorar a experiência das pessoas desenvolvedoras.
+            </p>
+            <p>
+              Acredito que produtos incríveis nascem da colaboração entre design
+              e engenharia. Meu foco está em desenhar experiências que resolvam
+              problemas reais, com clareza de propósito e viabilidade técnica,
+              sempre colocando o usuário no centro.
+            </p>
+            <p>
+              Estou aberto a novas oportunidades onde eu possa contribuir com
+              minha visão estratégica, perfil técnico e paixão por criar
+              experiências digitais que realmente façam a diferença.
+            </p>
           </div>
-          <div class="no-pa col-md-4 col-sm-6 col-xs-12">
-            <a href="job-portalsatc.html">
-              <li class="small">
-                <h3>Redesign - Portal SATC</h3>
-                <img
-                  src="images/jobs/portalsatc/thumb-portalsatc.jpg"
-                  alt="Thumbnail Redesign Portal SATC"
-                  class="img-responsive"
-                />
-              </li>
-            </a>
+          <div class="about-skills">
+            <div class="skill-group">
+              <h3>Development</h3>
+              <ul>
+                <li>JavaScript / TypeScript</li>
+                <li>React / Vue.js</li>
+                <li>Node.js / Python</li>
+                <li>PostgreSQL / MongoDB</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Design</h3>
+              <ul>
+                <li>UI/UX Design</li>
+                <li>Figma / Sketch</li>
+                <li>Design Systems</li>
+                <li>Prototyping</li>
+              </ul>
+            </div>
           </div>
-          <div class="no-pa col-md-4 col-sm-6 col-xs-12">
-            <a href="">
-              <li class="small">
-                <h3>Teste di Titulo</h3>
-                <img src="images/job-06.jpg" alt="" class="img-responsive" />
-              </li>
-            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-item">
+            <img
+              src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="E-commerce Platform"
+              class="work-image"
+            />
+            <div class="work-content">
+              <h3>E-commerce Platform</h3>
+              <p>
+                Full-stack solution with real-time inventory management and
+                secure payment processing.
+              </p>
+              <div class="work-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <img
+              src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Banking App"
+              class="work-image"
+            />
+            <div class="work-content">
+              <h3>Banking Application</h3>
+              <p>
+                Secure mobile banking with biometric authentication and
+                intuitive budgeting tools.
+              </p>
+              <div class="work-tech">
+                <span>React Native</span>
+                <span>Firebase</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <img
+              src="https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Analytics Dashboard"
+              class="work-image"
+            />
+            <div class="work-content">
+              <h3>Analytics Dashboard</h3>
+              <p>
+                Interactive data visualization with real-time updates and custom
+                filtering capabilities.
+              </p>
+              <div class="work-tech">
+                <span>D3.js</span>
+                <span>Python</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="experience-period">2020 — Present</div>
+            <div class="experience-content">
+              <h3>Senior Developer</h3>
+              <h4>TechCorp Solutions</h4>
+              <p>
+                Leading development of cloud applications serving 100K+ users.
+                Mentoring team members and establishing development best
+                practices.
+              </p>
+            </div>
           </div>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <div class="simbol">BS.</div>
-      <div class="copy">todos direitos reservados - 2017 &copy;</div>
+
+          <div class="experience-item">
+            <div class="experience-period">2018 — 2020</div>
+            <div class="experience-content">
+              <h3>Full Stack Developer</h3>
+              <h4>StartupXYZ</h4>
+              <p>
+                Built MVP from concept to 10K active users. Developed scalable
+                backend API and responsive web application.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-period">2016 — 2018</div>
+            <div class="experience-content">
+              <h3>Frontend Developer</h3>
+              <h4>Digital Agency Pro</h4>
+              <p>
+                Created responsive websites for diverse clients. Specialized in
+                performance optimization and user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Work Together</h2>
+        </div>
+        <div class="contact-content">
+          <p class="contact-description">
+            Ready to collaborate on your next project? I'm always excited to
+            work with passionate individuals and teams.
+          </p>
+          <div class="contact-info">
+            <a href="mailto:alex@alexjohnson.dev" class="contact-link"
+              >alex@alexjohnson.dev</a
+            >
+            <div class="contact-social">
+              <a href="https://linkedin.com/in/alexjohnson" class="social-link"
+                >LinkedIn</a
+              >
+              <a href="https://github.com/alexjohnson" class="social-link"
+                >GitHub</a
+              >
+              <a href="https://twitter.com/alexjohnson" class="social-link"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Alex Johnson</p>
+      </div>
     </footer>
-    <script src="js/custom.js"></script>
   </body>
 </html>
