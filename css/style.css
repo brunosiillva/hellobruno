@@ -39,11 +39,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--color-gray-700);
 }
 
@@ -76,6 +76,18 @@ strong {
   font-weight: 600;
 }
 
+section {
+  padding: var(--space-12) 0;
+}
+
+section:nth-of-type(odd) {
+  background-color: var(--color-white);
+}
+
+section:nth-of-type(even) {
+  background-color: var(--color-gray-100);
+}
+
 /* ===== LAYOUT ===== */
 .container {
   max-width: var(--container-width);
@@ -89,6 +101,10 @@ strong {
 
 .section-title {
   margin-bottom: var(--space-2);
+}
+
+.section-title:not(:first-of-type) {
+  margin-top: 80px;
 }
 
 /* ===== NAVIGATION ===== */
@@ -233,11 +249,6 @@ strong {
 }
 
 /* ===== ABOUT SECTION ===== */
-.about {
-  padding: var(--space-12) 0;
-  background-color: var(--color-gray-100);
-}
-
 .about-content {
   display: grid;
   grid-template-columns: 1fr 20rem;
@@ -272,10 +283,6 @@ strong {
 }
 
 /* ===== WORK SECTION ===== */
-.work {
-  padding: var(--space-12) 0;
-}
-
 .work-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -287,7 +294,7 @@ strong {
 }
 
 .work-item:hover {
-  transform: translateY(-16px);
+  transform: translateY(-8px);
 }
 
 .work-image {
@@ -323,11 +330,6 @@ strong {
 }
 
 /* ===== EXPERIENCE SECTION ===== */
-.experience {
-  padding: var(--space-12) 0;
-  background-color: var(--color-gray-100);
-}
-
 .experience-list {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -360,19 +362,10 @@ strong {
 
 .experience-content h4 {
   margin-bottom: var(--space-2);
-  font-size: 0.9rem;
-}
-
-.experience-content p,
-.experience-content li {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* ===== CONTACT SECTION ===== */
-.contact {
-  padding: var(--space-12) 0;
-}
-
 .contact-content {
   max-width: var(--content-width);
   margin: 0 auto;
