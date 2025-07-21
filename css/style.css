@@ -265,6 +265,7 @@ section:nth-of-type(even) {
 
 .skill-group h3 {
   margin-bottom: var(--space-2);
+  font-size: 1rem;
   font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
   letter-spacing: 0.05em;
