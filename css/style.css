@@ -58,7 +58,7 @@ p:last-child {
 
 .lead {
   font-size: 1.125rem;
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-semibold);
   color: var(--color-gray-900);
 }
 
@@ -218,7 +218,7 @@ section:nth-of-type(even) {
 }
 
 .hero-subtitle {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--color-secondary);
   margin-bottom: var(--space-4);
   font-weight: var(--font-weight-semibold);
@@ -265,7 +265,6 @@ section:nth-of-type(even) {
 
 .skill-group h3 {
   margin-bottom: var(--space-2);
-  font-size: 0.9rem;
   font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
   letter-spacing: 0.05em;
