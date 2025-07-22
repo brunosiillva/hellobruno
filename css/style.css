@@ -304,6 +304,7 @@ section:nth-of-type(even) {
   object-fit: cover;
   margin-bottom: var(--space-3);
   transition: filter var(--transition);
+  border-radius: var(--space-1);
 }
 
 .work-content h3 {
@@ -313,6 +314,11 @@ section:nth-of-type(even) {
 .work-content p {
   margin-bottom: var(--space-3);
   font-size: 0.9rem;
+}
+
+.work-title {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-4);
 }
 
 .work-tech {
@@ -430,6 +436,208 @@ section:nth-of-type(even) {
   margin-bottom: 0;
 }
 
+/* ===== PORTFOLIO PAGE STYLES ===== */
+.portfolio-header {
+  padding: var(--space-16) 0 var(--space-8);
+  background-color: var(--color-gray-100);
+}
+
+.portfolio-header-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.02em;
+}
+
+.portfolio-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-gray-700);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.portfolio-projects {
+  padding: var(--space-12) 0;
+}
+
+.project-detail {
+  margin-bottom: var(--space-16);
+  padding-bottom: var(--space-12);
+  border-bottom: 1px solid var(--color-gray-300);
+  scroll-margin-top: 5rem;
+}
+
+.project-detail:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+  margin-bottom: var(--space-8);
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-1);
+  letter-spacing: -0.01em;
+}
+
+.project-category {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-3);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.project-tech span {
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+  padding: var(--space-1) 0;
+  border-bottom: 1px solid var(--color-secondary);
+  margin-right: var(--space-2);
+  font-weight: var(--font-weight-medium);
+}
+
+.project-main-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--space-1);
+  transition: filter var(--transition);
+}
+
+.project-main-image:hover {
+  filter: brightness(1.05);
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.project-overview,
+.project-challenge,
+.project-solution,
+.project-results {
+  margin-bottom: var(--space-6);
+}
+
+.project-content h3 {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-3);
+}
+
+.project-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-content li {
+  font-size: 0.9rem;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-2);
+  padding-left: var(--space-3);
+  position: relative;
+}
+
+.project-content li::before {
+  content: "•";
+  color: var(--color-secondary);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.project-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.metric {
+  text-align: center;
+  padding: var(--space-3);
+  background-color: var(--color-gray-100);
+  border-radius: var(--space-1);
+}
+
+.metric-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  color: var(--color-gray-700);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.portfolio-cta {
+  padding: var(--space-12) 0;
+  background-color: var(--color-gray-100);
+}
+
+.cta-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-2);
+}
+
+.cta-content p {
+  font-size: 1.125rem;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-4);
+}
+
+.nav-link-active {
+  color: var(--color-primary) !important;
+  background-color: var(--color-gray-100);
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   :root {
@@ -441,14 +649,6 @@ section:nth-of-type(even) {
 
   .container {
     padding: 0 var(--space-2);
-  }
-
-  .nav-container {
-    padding: 0 var(--space-2);
-  }
-
-  .nav-menu {
-    gap: var(--space-3);
   }
 
   h1 {
@@ -470,6 +670,13 @@ section:nth-of-type(even) {
     height: 250px;
   }
 
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
   .btn-primary,
   .btn-secondary {
     width: 200px;
@@ -478,11 +685,6 @@ section:nth-of-type(even) {
   .about-content {
     grid-template-columns: 1fr;
     gap: var(--space-6);
-  }
-
-  .hero-actions {
-    justify-content: center;
-    align-items: center;
   }
 
   .work-grid {
@@ -503,6 +705,30 @@ section:nth-of-type(even) {
     flex-direction: column;
     gap: var(--space-2);
   }
+
+  /* Portfolio Page Mobile */
+  .portfolio-title {
+    font-size: 2.5rem;
+  }
+
+  .project-header {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -515,14 +741,15 @@ section:nth-of-type(even) {
     height: 200px;
   }
 
-  .hero-actions {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-2);
+  .work-image {
+    height: 200px;
   }
 
-  .work-image {
+  .portfolio-title {
+    font-size: 2rem;
+  }
+
+  .project-main-image {
     height: 200px;
   }
 }
@@ -544,7 +771,7 @@ section:nth-of-type(even) {
 a:focus,
 button:focus {
   outline: 2px solid var(--color-primary);
-  outline-offset: 4px;
+  outline-offset: 2px;
 }
 
 /* Print styles */
