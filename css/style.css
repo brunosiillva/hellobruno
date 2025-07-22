@@ -9,6 +9,7 @@
 @import "portfolio.css";
 @import "print.css";
 @import "responsive.css";
+@import "work.css";
 
 html {
   font-size: 16px;
