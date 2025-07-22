@@ -1,0 +1,22 @@
+/* Print styles */
+@media print {
+  .nav,
+  .hero-actions,
+  .contact-social {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: var(--color-black);
+  }
+
+  .hero,
+  .about,
+  .work,
+  .experience,
+  .contact {
+    padding: var(--space-4) 0;
+  }
+}

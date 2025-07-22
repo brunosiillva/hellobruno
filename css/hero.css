@@ -1,0 +1,50 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  padding: var(--space-16) 0 var(--space-12);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-1);
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-4);
+  font-weight: var(--font-weight-semibold);
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-5);
+  max-width: 600px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  transition: filter var(--transition-slow);
+}
