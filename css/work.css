@@ -5,6 +5,15 @@
   gap: var(--space-6);
 }
 
+.work-grid a {
+  border-radius: 0;
+  outline-offset: 4px;
+}
+
+.work-grid a:hover {
+  opacity: 1;
+}
+
 .work-item {
   transition: transform var(--transition);
 }
@@ -13,17 +22,16 @@
   transform: translateY(-8px);
 }
 
-.work-item a:hover {
-  opacity: 1;
-}
-
 .work-image {
   width: 100%;
   height: 20rem;
   object-fit: cover;
-  margin-bottom: var(--space-3);
   transition: filter var(--transition);
   border-radius: var(--space-1);
+}
+
+.work-content {
+  margin-top: var(--space-3);
 }
 
 .work-content h3 {
