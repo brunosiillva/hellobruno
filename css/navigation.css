@@ -23,12 +23,7 @@
   font-size: 1.25rem;
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
-  padding: 0 var(--space-1);
   border-radius: var(--space-1);
-}
-
-.nav-logo:hover {
-  background-color: var(--color-gray-100);
 }
 
 .nav-menu {

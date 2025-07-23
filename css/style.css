@@ -58,6 +58,7 @@ h4 {
 }
 
 p {
+  line-height: 1.8;
   color: var(--color-gray-700);
   margin-bottom: var(--space-3);
 }
@@ -73,7 +74,8 @@ p:last-child {
 }
 
 a {
-  color: var(--color-black);
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-bold);
   text-decoration: none;
   transition: opacity var(--transition);
   border-radius: var(--space-2);
@@ -97,6 +99,10 @@ section:nth-of-type(odd) {
 
 section:nth-of-type(even) {
   background-color: var(--color-gray-100);
+}
+
+section li::marker {
+  color: var(--color-secondary);
 }
 
 /* ===== LAYOUT ===== */
