@@ -172,3 +172,34 @@ section li::marker {
   color: var(--color-gray-500);
   margin-bottom: 0;
 }
+
+/* ===== METRICS ===== */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
+}
+
+.metrics .metric {
+  text-align: center;
+  padding: var(--space-3);
+  background-color: var(--color-gray-100);
+  border-radius: var(--space-1);
+}
+
+.metrics .metric-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.metrics .metric-label {
+  font-size: 0.8rem;
+  color: var(--color-gray-700);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

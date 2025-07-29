@@ -11,6 +11,7 @@
   grid-template-columns: 1fr 20rem;
   gap: var(--space-8);
   align-items: center;
+  width: 1000px;
 }
 
 .hero-title {
@@ -33,6 +34,7 @@
 }
 
 .hero-actions {
+  margin-top: var(--space-4);
   display: flex;
   gap: var(--space-2);
 }
