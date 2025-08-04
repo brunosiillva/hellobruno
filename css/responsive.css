@@ -1,0 +1,115 @@
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  :root {
+    --space-8: 3rem;
+    --space-10: 4rem;
+    --space-12: 5rem;
+    --space-16: 6rem;
+  }
+
+  .container {
+    padding: 0 var(--space-2);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 200px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .experience-period {
+    font-size: 0.8rem;
+  }
+
+  .contact-social {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  /* Portfolio Page Mobile */
+  .portfolio-title {
+    font-size: 2.5rem;
+  }
+
+  .project-header {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .work-image {
+    height: 200px;
+  }
+
+  .portfolio-title {
+    font-size: 2rem;
+  }
+
+  .project-main-image {
+    height: 200px;
+  }
+}
