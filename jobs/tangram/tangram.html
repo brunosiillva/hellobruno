@@ -11,21 +11,35 @@
       name="keywords"
       content="product designer, design system, frontend, design ops, user experience, product manager, developer experience, internal tools, playbooks, figma, processos de design"
     />
-    <meta name="author" content="" />
-    <meta property="og:title" content="" />
+    <meta name="author" content="Bruno Silva" />
+    <meta
+      property="og:title"
+      content="Hello Bruno - Product Designer especialista em Produto e Design System"
+    />
     <meta
       property="og:description"
       content="Olá! Eu sou um Product Designer com mais de 7 anos de experiência em UX Design, Design Systems e experiência do desenvolvedor (Developer Experience). Trabalho na interseção entre design, engenharia e produto, criando soluções digitais escaláveis, consistentes e com foco no impacto real para o negócio."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://hellobruno.com.br" />
+    <meta
+      property="og:image"
+      content="https://hellobruno.com.br/images/capa-og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
     <meta name="msapplication-TileColor" content="#ff5353" />
     <meta
       name="msapplication-TileImage"
       content="../../images/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ff5353" />
-    <link rel="canonical" href="" />
-    <title>Hello Bruno!</title>
+    <link rel="canonical" href="http://hellobruno.com.br" />
+    <title>
+      Hello Bruno! Product Designer especialista em Design Systems e UX Design
+    </title>
+
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -95,7 +109,7 @@
       sizes="16x16"
       href="../../images/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="../../images/favicon/manifest.json" />
+    <link rel="manifest" href="images/favicon/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -108,6 +122,11 @@
     <nav class="nav">
       <div class="nav-container">
         <a href="../../index.html#home" class="nav-logo">BS</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-menu">
           <li>
             <a href="../../index.html#about" class="nav-link">Sobre mim</a>
@@ -121,7 +140,16 @@
             >
           </li>
           <li>
-            <a href="#contact" class="nav-link">Contato</a>
+            <a href="../../index.html#contact" class="nav-link">Contato</a>
+          </li>
+          <li>
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              🌙
+            </button>
           </li>
         </ul>
       </div>
@@ -322,5 +350,7 @@
         <p>&copy; 2025 Bruno Silva</p>
       </div>
     </footer>
+
+    <script src="../../main.js"></script>
   </body>
 </html>

@@ -49,3 +49,15 @@
   --transition: 0.2s ease;
   --transition-slow: 0.4s ease;
 }
+
+html.dark-mode {
+  --color-primary: #ff4444;
+  --color-secondary: #00a8b5;
+  --color-black: #ffffff;
+  --color-gray-900: #f0f0f0;
+  --color-gray-700: #cccccc;
+  --color-gray-500: #999999;
+  --color-gray-300: #666666;
+  --color-gray-100: #1a1a1a;
+  --color-white: #0d0d0d;
+}
