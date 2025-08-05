@@ -11,21 +11,35 @@
       name="keywords"
       content="product designer, design system, frontend, design ops, user experience, product manager, developer experience, internal tools, playbooks, figma, processos de design"
     />
-    <meta name="author" content="" />
-    <meta property="og:title" content="" />
+    <meta name="author" content="Bruno Silva" />
+    <meta
+      property="og:title"
+      content="Hello Bruno - Product Designer especialista em Produto e Design System"
+    />
     <meta
       property="og:description"
       content="Olá! Eu sou um Product Designer com mais de 7 anos de experiência em UX Design, Design Systems e experiência do desenvolvedor (Developer Experience). Trabalho na interseção entre design, engenharia e produto, criando soluções digitais escaláveis, consistentes e com foco no impacto real para o negócio."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://hellobruno.com.br" />
+    <meta
+      property="og:image"
+      content="https://hellobruno.com.br/images/capa-og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
     <meta name="msapplication-TileColor" content="#ff5353" />
     <meta
       name="msapplication-TileImage"
       content="images/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ff5353" />
-    <link rel="canonical" href="" />
-    <title>Hello Bruno!</title>
+    <link rel="canonical" href="http://hellobruno.com.br" />
+    <title>
+      Hello Bruno! Product Designer especialista em Design Systems e UX Design
+    </title>
+
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -108,11 +122,25 @@
     <nav class="nav">
       <div class="nav-container">
         <a href="#home" class="nav-logo">BS</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-menu">
           <li><a href="#about" class="nav-link">Sobre mim</a></li>
           <li><a href="#work" class="nav-link">Trabalhos</a></li>
           <li><a href="#experience" class="nav-link">Experiências</a></li>
           <li><a href="#contact" class="nav-link">Contato</a></li>
+          <li>
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              🌙
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -120,7 +148,7 @@
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">Bruno Silva</h1>
+          <h1 class="hero-title">Oiê, Bruno Silva aqui!</h1>
           <h2 class="hero-subtitle">
             Product Designer Specialist | UX Design | Design Ops | Design System
           </h2>
@@ -141,8 +169,8 @@
               <span class="metric-label">Projetos concluídos</span>
             </div>
             <div class="metric">
-              <span class="metric-number">+33</span>
-              <span class="metric-label">Designers impactados</span>
+              <span class="metric-number">+33 mil</span>
+              <span class="metric-label">Clientes impactados</span>
             </div>
           </div>
           <div class="hero-actions">
@@ -151,7 +179,11 @@
           </div>
         </div>
         <div class="hero-image">
-          <img class="profile-image" src="images/foto-bruno-silva.jpg" alt="" />
+          <img
+            class="profile-image"
+            src="images/bruno-silva-product-designer.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
@@ -298,26 +330,6 @@
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>Javascript</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work-item">
-            <img
-              src="images/job-01.jpg"
-              alt="Analytics Dashboard"
-              class="work-image"
-            />
-            <div class="work-content">
-              <h4>Analytics Dashboard</h4>
-              <p>
-                Interactive data visualization with real-time updates and custom
-                filtering capabilities.
-              </p>
-              <div class="work-tech">
-                <span>D3.js</span>
-                <span>Python</span>
-                <span>MongoDB</span>
               </div>
             </div>
           </article>
@@ -669,5 +681,7 @@
         <p>&copy; 2025 Bruno Silva</p>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
