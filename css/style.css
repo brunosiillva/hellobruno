@@ -183,9 +183,13 @@ section li::marker {
 
 .metrics .metric {
   text-align: center;
-  padding: var(--space-3);
+  padding: var(--space-2);
   background-color: var(--color-gray-100);
   border-radius: var(--space-1);
+}
+
+.metrics .metric:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .metrics .metric-number {
