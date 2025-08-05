@@ -207,3 +207,40 @@ section li::marker {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+
+/*== PROJECTS STYLES ==*/
+
+.colors-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.colors-box .box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  align-items: center;
+}
+
+.colors-box .box .color {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--space-1);
+}
+
+.typo-primeirajarda {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.24rem;
+}
+
+.typo-portalsatc {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.24rem;
+}
