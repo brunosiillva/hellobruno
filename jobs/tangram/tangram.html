@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark-mode">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -122,7 +122,12 @@
     <nav class="nav">
       <div class="nav-container">
         <a href="../../index.html#home" class="nav-logo">BS</a>
-        <button class="nav-toggle" aria-label="Toggle navigation">
+        <button
+          class="nav-toggle"
+          aria-label="Abrir ou fechar menu de navegação"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -181,7 +186,7 @@
             <div class="project-image">
               <img
                 src="tangram-thumb.png"
-                alt="Imagem de exemplo demonstrando o logotipo do Tangram"
+                alt="Página inicial do Tangram Design System da RD Station, com logotipo geométrico azul e texto explicativo sobre tokens, componentes, padrões de interface e documentação."
                 class="project-main-image"
               />
             </div>
@@ -302,9 +307,18 @@
           </div>
 
           <div class="project-gallery">
-            <img src="capa-tangram.png" />
-            <img src="button-tangram.png" />
-            <img src="autocomplete-tangram.png" />
+            <img
+              src="capa-tangram.png"
+              alt="Tela de capa do sistema de design Tangram no Figma, com fundo azul e padrão de formas geométricas, destacando o nome “Tangram” e o texto “Tangram Design System”."
+            />
+            <img
+              src="button-tangram.png"
+              alt="Tela do Figma exibindo variações de botões do sistema de design Tangram, com combinações de texto, ícones, e diferentes estilos (primário e secundário) organizados em uma grade."
+            />
+            <img
+              src="autocomplete-tangram.png"
+              alt="Tela do Figma mostrando componentes de autocomplete do design system Tangram, com diferentes estados (padrão, hover, erro) e propriedades editáveis no painel lateral direito."
+            />
           </div>
         </article>
       </div>
@@ -331,12 +345,14 @@
                 href="https://linkedin.com/in/bruno-siilva"
                 target="_blank"
                 class="social-link"
+                rel="noopener noreferrer"
                 >LinkedIn</a
               >
               <a
                 href="http://github.com/brunosiillva/"
                 target="_blank"
                 class="social-link"
+                rel="noopener noreferrer"
                 >GitHub</a
               >
             </div>
