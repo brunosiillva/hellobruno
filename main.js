@@ -1,4 +1,3 @@
-// 🌙 Tema: aplica imediatamente o modo escuro se necessário
 (function applyInitialTheme() {
   const theme = localStorage.getItem("theme");
   if (theme === "dark") {
@@ -7,26 +6,33 @@
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
-  // ========= 🌗 Alternância de Tema ========= //
   const themeToggle = document.getElementById("theme-toggle");
   const html = document.documentElement;
 
-  const updateTheme = (theme) => {
+  const applyTheme = (theme) => {
     const isDark = theme === "dark";
     html.classList.toggle("dark-mode", isDark);
     themeToggle.textContent = isDark ? "☀️" : "🌙";
     localStorage.setItem("theme", theme);
   };
 
-  const currentTheme = localStorage.getItem("theme") || "light";
-  updateTheme(currentTheme);
+  const savedTheme = localStorage.getItem("theme");
+  const isHtmlDark = html.classList.contains("dark-mode");
+
+  if (savedTheme === "light") {
+    html.classList.remove("dark-mode");
+    themeToggle.textContent = "🌙";
+  } else if (savedTheme === "dark" || isHtmlDark) {
+    html.classList.add("dark-mode");
+    themeToggle.textContent = "☀️";
+  }
 
   themeToggle?.addEventListener("click", () => {
-    const newTheme = html.classList.contains("dark-mode") ? "light" : "dark";
-    updateTheme(newTheme);
+    const isDarkMode = html.classList.contains("dark-mode");
+    const newTheme = isDarkMode ? "light" : "dark";
+    applyTheme(newTheme);
   });
 
-  // ========= 📱 Menu Mobile ========= //
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -39,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : "none";
     spans[1].style.opacity = isOpen ? "0" : "1";
     spans[2].style.transform = isOpen
-      ? "rotate(-45deg) translate(5px, -6px)"
+      ? "rotate(-45deg) translate(7px, -6px)"
       : "none";
   };
 
