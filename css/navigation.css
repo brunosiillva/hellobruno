@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: var(--space-1);
+  gap: var(--space-2);
 }
 
 .nav-link {
@@ -87,4 +87,43 @@
 html.dark-mode .nav,
 html.dark-mode .nav-menu {
   background-color: rgba(13, 13, 13, 0.95);
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+  display: flex;
+  gap: var(--space-1);
+  align-items: center;
+}
+
+.language-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem var(--space-1);
+  border-radius: var(--space-1);
+  transition: all var(--transition);
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.language-link:hover {
+  opacity: 1;
+  background-color: var(--color-gray-100);
+}
+
+.language-link.active {
+  opacity: 1;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.language-link.active:hover {
+  background-color: var(--color-primary);
+  opacity: 0.9;
+}
+
+.flag {
+  font-size: 0.8rem;
+  display: block;
 }
