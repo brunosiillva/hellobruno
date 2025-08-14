@@ -1,33 +1,6 @@
 /* ===== RESPONSIVE DESIGN ===== */
 /* Mobile Navigation Styles */
 @media (max-width: 1024px) {
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 4rem;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    flex-direction: column;
-    padding: var(--space-4) var(--space-3);
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    gap: var(--space-2);
-    z-index: 999;
-  }
-
-  .nav-menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
   .nav-link {
     padding: var(--space-2);
     text-align: center;
@@ -42,26 +15,22 @@
   .hero .profile-image {
     width: 100%;
   }
+
+  .project-images img.large-image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-  :root {
-    --space-8: 3rem;
-    --space-10: 4rem;
-    --space-12: 5rem;
-    --space-16: 6rem;
-  }
-
-  .container {
-    padding: 0 var(--space-2);
-  }
-
   h1 {
     font-size: 2.5rem;
   }
 
   h2 {
     font-size: 1.75rem;
+  }
+  .container {
+    padding: 0 var(--space-2);
   }
 
   .hero .container {
@@ -121,13 +90,50 @@
     gap: var(--space-5);
   }
 
+  .project-main-image {
+    height: auto;
+  }
+
   .project-metrics {
     grid-template-columns: 1fr;
     gap: var(--space-3);
   }
 
+  .project-images img {
+    width: 100%;
+  }
+
   .cta-content h2 {
     font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: var(--space-4) var(--space-3);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    gap: var(--space-2);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
 
