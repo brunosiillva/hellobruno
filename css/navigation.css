@@ -23,7 +23,7 @@
 .nav-logo {
   font-size: 1.25rem;
   font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
+  color: var(--text-primary-color-high-emphasis);
   border-radius: var(--space-1);
 }
 
@@ -37,16 +37,16 @@
 .nav-link {
   font-size: 0.9rem;
   font-weight: var(--font-weight-normal);
-  color: var(--color-gray-700);
+  color: var(--text-neutral-color-high-emphasis);
   transition: color var(--transition);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--space-1);
 }
 
 .nav-link:hover {
-  color: var(--color-primary);
+  color: var(--text-primary-color-high-emphasis);
   opacity: 1;
-  background-color: var(--color-gray-100);
+  background-color: var(--background-neutral-color-low-emphasis);
 }
 
 .theme-toggle {
@@ -62,7 +62,7 @@
 }
 
 .theme-toggle:hover {
-  background-color: var(--color-gray-100);
+  background-color: var(--background-neutral-color-low-emphasis);
   transform: scale(1.1);
 }
 
@@ -79,7 +79,7 @@
 .nav-toggle span {
   width: 25px;
   height: 3px;
-  background-color: var(--color-gray-700);
+  background-color: var(--icon-neutral-color-low-emphasis);
   transition: all 0.3s ease;
   border-radius: 2px;
 }
@@ -109,17 +109,17 @@ html.dark-mode .nav-menu {
 
 .language-link:hover {
   opacity: 1;
-  background-color: var(--color-gray-100);
+  background-color: var(--background-neutral-color-low-emphasis);
 }
 
 .language-link.active {
   opacity: 1;
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--background-primary-color-high-emphasis);
+  color: var(--text-neutral-color-inverse);
 }
 
 .language-link.active:hover {
-  background-color: var(--color-primary);
+  background-color: var(--background-primary-color-high-emphasis);
   opacity: 0.9;
 }
 

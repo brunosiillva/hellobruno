@@ -48,7 +48,7 @@
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background-color: var(--color-secondary);
+  background-color: var(--background-secondary-color-high-emphasis);
   z-index: 98;
   cursor: pointer;
 }

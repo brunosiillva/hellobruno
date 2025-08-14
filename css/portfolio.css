@@ -1,7 +1,7 @@
 /* ===== PORTFOLIO PAGE STYLES ===== */
 .portfolio-header {
   padding: var(--space-16) 0 var(--space-8);
-  background-color: var(--color-gray-100);
+  background-color: var(--background-neutral-color-low-emphasis);
 }
 
 .portfolio-header-content {
@@ -13,14 +13,13 @@
 .portfolio-title {
   font-size: 3rem;
   font-weight: var(--font-weight-bold);
-  color: var(--color-black);
+  color: var(--text-neutral-color-high-emphasis);
   margin-bottom: var(--space-2);
   letter-spacing: -0.02em;
 }
 
 .portfolio-subtitle {
   font-size: 1.125rem;
-  color: var(--color-gray-700);
   line-height: 1.7;
   max-width: 600px;
   margin: 0 auto;
@@ -29,7 +28,7 @@
 .project-detail {
   margin-bottom: var(--space-16);
   padding-bottom: var(--space-12);
-  border-bottom: 1px solid var(--color-gray-300);
+  border-bottom: 1px solid var(--border-neutral-color-low-emphasis);
   scroll-margin-top: 5rem;
 }
 
@@ -50,7 +49,7 @@
 .project-title {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
-  color: var(--color-black);
+  color: var(--text-neutral-color-high-emphasis);
   margin-bottom: var(--space-4);
 }
 
@@ -66,9 +65,9 @@
 
 .project-tech span {
   font-size: 0.8rem;
-  color: var(--color-secondary);
+  color: var(--text-secondary-color-high-emphasis);
   padding: var(--space-1) 0;
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--border-secondary-color-high-emphasis);
   margin-right: var(--space-2);
   font-weight: var(--font-weight-medium);
 }
@@ -103,13 +102,12 @@
 .project-content h3 {
   font-size: 1.25rem;
   font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
+  color: var(--text-primary-color-high-emphasis);
   margin-bottom: var(--space-2);
 }
 
 .project-content-single-column p,
 .project-content p {
-  color: var(--color-gray-700);
   margin-bottom: var(--space-3);
 }
 
@@ -120,7 +118,6 @@
 
 .project-content-single-column li,
 .project-content li {
-  color: var(--color-gray-700);
   margin-bottom: var(--space-2);
   padding-left: var(--space-1);
 }
@@ -149,7 +146,7 @@
 
 .portfolio-cta {
   padding: var(--space-12) 0;
-  background-color: var(--color-gray-100);
+  background-color: var(--background-neutral-color-low-emphasis);
 }
 
 .cta-content {
@@ -161,17 +158,16 @@
 .cta-content h2 {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
-  color: var(--color-black);
+  color: var(--text-neutral-color-high-emphasis);
   margin-bottom: var(--space-2);
 }
 
 .cta-content p {
   font-size: 1.125rem;
-  color: var(--color-gray-700);
   margin-bottom: var(--space-4);
 }
 
 .nav-link-active {
-  color: var(--color-primary) !important;
-  background-color: var(--color-gray-100);
+  color: var(--text-primary-color-high-emphasis);
+  background-color: var(--background-neutral-color-low-emphasis);
 }

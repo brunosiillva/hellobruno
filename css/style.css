@@ -20,8 +20,8 @@ body {
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
   line-height: 1.6;
-  color: var(--color-gray-900);
-  background-color: var(--color-white);
+  color: var(--text-neutral-color-high-emphasis);
+  background-color: var(--background-neutral-color-high-emphasis);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,7 +35,7 @@ h5,
 h6 {
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
-  color: var(--color-black);
+  color: var(--text-neutral-color-high-emphasis);
 }
 
 h1 {
@@ -54,12 +54,10 @@ h3 {
 
 h4 {
   font-size: 1.25rem;
-  color: var(--color-gray-700);
 }
 
 p {
   line-height: 1.8;
-  color: var(--color-gray-700);
   margin-bottom: var(--space-3);
 }
 
@@ -70,11 +68,11 @@ p:last-child {
 .lead {
   font-size: 1.125rem;
   font-weight: var(--font-weight-semibold);
-  color: var(--color-gray-900);
+  color: var(--text-neutral-color-high-emphasis);
 }
 
 a {
-  color: var(--color-secondary);
+  color: var(--text-secondary-color-high-emphasis);
   font-weight: var(--font-weight-bold);
   text-decoration: none;
   transition: opacity var(--transition);
@@ -94,15 +92,15 @@ section {
 }
 
 section:nth-of-type(odd) {
-  background-color: var(--color-white);
+  background-color: var(--background-neutral-color-high-emphasis);
 }
 
 section:nth-of-type(even) {
-  background-color: var(--color-gray-100);
+  background-color: var(--background-neutral-color-low-emphasis);
 }
 
 section li::marker {
-  color: var(--color-secondary);
+  color: var(--text-secondary-color-high-emphasis);
 }
 
 /* ===== LAYOUT ===== */
@@ -131,16 +129,16 @@ section li::marker {
   padding: var(--space-2) var(--space-3);
   font-weight: var(--font-weight-medium);
   text-align: center;
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--border-neutral-color-high-emphasis);
   transition: all var(--transition);
   cursor: pointer;
   border-radius: var(--space-2);
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
+  background-color: var(--background-primary-color-high-emphasis);
+  color: var(--text-neutral-color-inverse);
+  border-color: var(--border-primary-color-high-emphasis);
 }
 
 .btn-primary:hover {
@@ -150,26 +148,26 @@ section li::marker {
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-secondary);
-  border-color: var(--color-secondary);
+  color: var(--text-secondary-color-high-emphasis);
+  border-color: var(--border-secondary-color-high-emphasis);
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
+  background-color: var(--background-secondary-color-high-emphasis);
+  color: var(--text-neutral-color-inverse);
   opacity: 1;
 }
 
 /* ===== FOOTER ===== */
 .footer {
   padding: var(--space-4) 0;
-  border-top: 1px solid var(--color-gray-100);
+  border-top: 1px solid var(--border-neutral-color-low-emphasis);
   text-align: center;
 }
 
 .footer p {
   font-size: 0.8rem;
-  color: var(--color-gray-500);
+  color: var(--text-neutral-color-low-emphasis);
   margin-bottom: 0;
 }
 
@@ -184,7 +182,7 @@ section li::marker {
 .metrics .metric {
   text-align: center;
   padding: var(--space-2);
-  background-color: var(--color-gray-100);
+  background-color: var(--background-neutral-color-low-emphasis);
   border-radius: var(--space-1);
 }
 
@@ -196,13 +194,12 @@ section li::marker {
   display: block;
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
+  color: var(--text-primary-color-high-emphasis);
   margin-bottom: var(--space-1);
 }
 
 .metrics .metric-label {
   font-size: 0.8rem;
-  color: var(--color-gray-700);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.05em;
