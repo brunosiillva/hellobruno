@@ -19,6 +19,24 @@
   --color-gray-100: #f5f5f5;
   --color-white: #ffffff;
 
+  --text-neutral-color-high-emphasis: var(--color-black);
+  --text-neutral-color-low-emphasis: var(--color-gray-500);
+  --text-neutral-color-inverse: var(--color-white);
+  --border-neutral-color-high-emphasis: var(--color-black);
+  --border-neutral-color-low-emphasis: var(--color-gray-300);
+  --icon-neutral-color-high-emphasis: var(--color-black);
+  --icon-neutral-color-low-emphasis: var(--color-gray-500);
+  --background-neutral-color-high-emphasis: var(--color-white);
+  --background-neutral-color-low-emphasis: var(--color-gray-100);
+
+  --text-primary-color-high-emphasis: var(--color-primary);
+  --border-primary-color-high-emphasis: var(--color-primary);
+  --background-primary-color-high-emphasis: var(--color-primary);
+
+  --text-secondary-color-high-emphasis: var(--color-secondary);
+  --border-secondary-color-high-emphasis: var(--color-secondary);
+  --background-secondary-color-high-emphasis: var(--color-secondary);
+
   /* Typography */
   --font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -53,11 +71,13 @@
 html.dark-mode {
   --color-primary: #ff4444;
   --color-secondary: #00a8b5;
-  --color-black: #ffffff;
-  --color-gray-900: #f0f0f0;
-  --color-gray-700: #cccccc;
-  --color-gray-500: #999999;
-  --color-gray-300: #666666;
-  --color-gray-100: #1a1a1a;
-  --color-white: #0d0d0d;
+
+  --text-neutral-color-high-emphasis: var(--color-white);
+  --text-neutral-color-low-emphasis: var(--color-gray-500);
+  --text-neutral-color-inverse: var(--color-black);
+
+  --border-neutral-color-low-emphasis: var(--color-gray-700);
+
+  --background-neutral-color-high-emphasis: var(--color-black);
+  --background-neutral-color-low-emphasis: var(--color-gray-900);
 }

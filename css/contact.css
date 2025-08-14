@@ -17,14 +17,14 @@
 .contact-link {
   font-size: 1.25rem;
   font-weight: var(--font-weight-medium);
-  color: var(--color-primary);
+  color: var(--text-primary-color-high-emphasis);
   display: block;
   margin-bottom: var(--space-4);
   transition: color var(--transition);
 }
 
 .contact-link:hover {
-  color: var(--color-secondary);
+  color: var(--text-secondary-color-high-emphasis);
   opacity: 1;
 }
 
@@ -36,11 +36,11 @@
 
 .social-link {
   font-size: 0.9rem;
-  color: var(--color-secondary);
+  color: var(--text-secondary-color-high-emphasis);
   transition: color var(--transition);
 }
 
 .social-link:hover {
-  color: var(--color-primary);
+  color: var(--text-primary-color-high-emphasis);
   opacity: 1;
 }

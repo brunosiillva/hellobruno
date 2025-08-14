@@ -19,7 +19,7 @@
   font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-primary);
+  color: var(--text-primary-color-high-emphasis);
 }
 
 .skill-group ul {
@@ -28,6 +28,5 @@
 
 .skill-group li {
   font-size: 0.9rem;
-  color: var(--color-gray-700);
   margin-bottom: var(--space-1);
 }

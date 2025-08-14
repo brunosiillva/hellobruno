@@ -21,7 +21,7 @@
 
 .hero-subtitle {
   font-size: 1rem;
-  color: var(--color-secondary);
+  color: var(--text-secondary-color-high-emphasis);
   margin-bottom: var(--space-4);
   font-weight: var(--font-weight-semibold);
 }
