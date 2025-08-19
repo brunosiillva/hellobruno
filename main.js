@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const animateHamburgerIcon = (isOpen) => {
     if (!spans) return;
     spans[0].style.transform = isOpen
-      ? "rotate(45deg) translate(5px, 5px)"
+      ? "rotate(45deg) translate(5px, 4px)"
       : "none";
     spans[1].style.opacity = isOpen ? "0" : "1";
     spans[2].style.transform = isOpen
-      ? "rotate(-45deg) translate(7px, -6px)"
+      ? "rotate(-45deg) translate(6px, -6px)"
       : "none";
   };
 
