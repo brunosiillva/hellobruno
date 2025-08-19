@@ -192,7 +192,7 @@ section li::marker {
 
 .metrics .metric-number {
   display: block;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: var(--font-weight-bold);
   color: var(--text-primary-color-high-emphasis);
   margin-bottom: var(--space-1);
