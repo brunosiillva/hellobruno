@@ -124,9 +124,12 @@ section li::marker {
 
 /* ===== BUTTONS ===== */
 .btn-primary,
-.btn-secondary {
-  display: inline-block;
-  padding: var(--space-2) var(--space-3);
+.btn-secondary,
+.btn-tertiary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2);
   font-weight: var(--font-weight-medium);
   text-align: center;
   border: 1px solid var(--border-neutral-color-high-emphasis);
@@ -158,6 +161,10 @@ section li::marker {
   opacity: 1;
 }
 
+.btn-tertiary {
+  border: 0;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   padding: var(--space-4) 0;
@@ -184,10 +191,11 @@ section li::marker {
   padding: var(--space-2);
   background-color: var(--background-neutral-color-low-emphasis);
   border-radius: var(--space-1);
+  cursor: default;
 }
 
 .metrics .metric:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
 }
 
 .metrics .metric-number {
