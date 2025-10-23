@@ -1,15 +1,15 @@
-@import "variables.css";
-@import "scrollbar.css";
-@import "about.css";
-@import "accessibility.css";
-@import "contact.css";
-@import "experience.css";
-@import "hero.css";
-@import "navigation.css";
-@import "portfolio.css";
-@import "print.css";
-@import "responsive.css";
-@import "work.css";
+@import 'variables.css';
+@import 'scrollbar.css';
+@import 'about.css';
+@import 'accessibility.css';
+@import 'contact.css';
+@import 'experience.css';
+@import 'hero.css';
+@import 'navigation.css';
+@import 'portfolio.css';
+@import 'print.css';
+@import 'responsive.css';
+@import 'work.css';
 
 html {
   font-size: 16px;
@@ -36,6 +36,7 @@ h6 {
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
   color: var(--text-neutral-color-high-emphasis);
+  width: 100%;
 }
 
 h1 {
@@ -57,6 +58,7 @@ h4 {
 }
 
 p {
+  width: 100%;
   line-height: 1.8;
   margin-bottom: var(--space-3);
 }
@@ -65,10 +67,8 @@ p:last-child {
   margin-bottom: 0;
 }
 
-.lead {
-  font-size: 1.125rem;
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-neutral-color-high-emphasis);
+img {
+  width: 100%;
 }
 
 a {
@@ -103,6 +103,12 @@ section li::marker {
   color: var(--text-secondary-color-high-emphasis);
 }
 
+.lead {
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-neutral-color-high-emphasis);
+}
+
 /* ===== LAYOUT ===== */
 .container {
   max-width: var(--container-width);
@@ -120,6 +126,45 @@ section li::marker {
 
 .section-title:not(:first-of-type) {
   margin-top: 80px;
+}
+
+/* ===== UTILS ===== */
+
+.flex {
+  display: inline-flex;
+  gap: var(--space-4);
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.padding-xlarge {
+  padding: var(--space-6) !important;
+}
+
+.text-primary-color {
+  color: var(--text-primary-color-high-emphasis);
 }
 
 /* ===== BUTTONS ===== */
@@ -214,7 +259,6 @@ section li::marker {
 }
 
 /*== PROJECTS STYLES ==*/
-
 .colors-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -235,7 +279,7 @@ section li::marker {
 }
 
 .typo-primeirajarda {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -243,7 +287,7 @@ section li::marker {
 }
 
 .typo-portalsatc {
-  font-family: "Roboto", serif;
+  font-family: 'Roboto', serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
