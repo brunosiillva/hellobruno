@@ -1,7 +1,6 @@
 /* ===== PORTFOLIO PAGE STYLES ===== */
 .project section {
-  height: 100dvh;
-  min-height: 720px;
+  min-height: 100dvh;
   padding: var(--space-16);
   position: relative;
   background-color: initial !important;
@@ -159,7 +158,7 @@
 }
 
 .project .card h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: var(--space-2);
   margin-bottom: var(--space-2);
 }
@@ -204,5 +203,192 @@
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
+  }
+}
+
+/* ============================================================
+   CASE NioDS — estilos escopados sob .niods-case
+   Movido de dentro de jobs/niods/niods.html. Só afeta a página do case.
+   Nada aqui vaza para a home ou para o Tangram.
+   ============================================================ */
+
+/* deixa as seções crescerem com o conteúdo denso; só a capa fica em tela cheia */
+.niods-case section:not(#cover) {
+  height: auto;
+  min-height: auto;
+  align-items: flex-start;
+}
+
+.niods-case section#artefatos,
+.niods-case section#resultado {
+  display: block;
+}
+
+/* diagrama: sem painel branco, herda o fundo da seção e adapta ao tema */
+.niods-case .svg-panel {
+  width: 100%;
+  max-width: 760px;
+  margin: var(--space-4) auto 0;
+}
+
+.niods-case .split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .niods-case .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.principle {
+  border-radius: var(--border-radius-2);
+  padding: var(--space-4);
+  background: color-mix(in srgb, var(--color-primary) 6%, transparent);
+}
+
+.principle h3 {
+  margin-top: 0;
+}
+
+.principle ul {
+  padding-left: var(--space-3);
+}
+
+.principle li {
+  margin-bottom: var(--space-1);
+  font-family: 'Roboto Slab', serif;
+}
+
+/* barra de progresso de leitura */
+.nds-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--background-primary-color-high-emphasis);
+  z-index: 1001;
+  transition: width 0.1s linear;
+}
+
+/* reveal on scroll: estado inicial só com JS ativo (.nds-js). sem JS, nada some. */
+.nds-js .niods-case .nds-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.nds-js .niods-case .nds-reveal.nds-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* microinterações nos cards de resultado */
+.nds-js .niods-case #resultado .card {
+  transition:
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease;
+}
+
+.nds-js .niods-case #resultado .card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.nds-js .niods-case #resultado.nds-in .card h2 {
+  animation: nds-pop 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.nds-js .niods-case #resultado.nds-in .card:nth-child(2) h2 {
+  animation-delay: 0.12s;
+}
+
+.nds-js .niods-case #resultado.nds-in .card:nth-child(3) h2 {
+  animation-delay: 0.24s;
+}
+
+@keyframes nds-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.82);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* navegação flutuante prev/próxima */
+.nds-nav {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nds-nav button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--background-secondary-color-high-emphasis);
+  color: var(--text-neutral-color-inverse);
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.nds-nav button:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.nds-nav button:focus-visible {
+  outline: 2px solid var(--border-primary-color-high-emphasis);
+  outline-offset: 3px;
+}
+
+.nds-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .nds-nav {
+    right: 12px;
+    bottom: 12px;
+  }
+}
+
+/* redundância defensiva se o movimento estiver desligado */
+@media (prefers-reduced-motion: reduce) {
+  .nds-progress {
+    display: none;
+  }
+
+  .nds-js .niods-case .nds-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .nds-js .niods-case #resultado .card:hover {
+    transform: none;
   }
 }
