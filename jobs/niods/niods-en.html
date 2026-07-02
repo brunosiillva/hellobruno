@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" class="dark-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NioDS case study: how component creation became an AI agent workflow, making it possible to build and maintain Nio's multiplatform design system with quality - even with a single person responsible for the whole system."
+    />
+    <meta name="author" content="Bruno Silva" />
+    <meta property="og:title" content="NioDS: an AI agent workflow" />
+    <meta
+      property="og:description"
+      content="How component creation became an AI agent workflow to build and maintain Nio's multiplatform design system without compromising on quality."
+    />
+    <meta property="og:type" content="website" />
+    <title>NioDS: an AI agent workflow for a design system | Bruno Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <div class="nds-progress" id="nds-progress" aria-hidden="true"></div>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="../../index.html#home" class="nav-logo">BS</a>
+        <button
+          class="nav-toggle"
+          aria-label="Open or close navigation menu"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="../../index-en.html#about" class="nav-link">About</a></li>
+          <li><a href="../../index-en.html#work" class="nav-link">Work</a></li>
+          <li><a href="../../index-en.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="../../index-en.html#contact" class="nav-link">Contact</a></li>
+          <li class="language-switcher">
+            <a href="niods.html" class="language-link" title="Português (Brasil)"><span class="flag">BR</span></a>
+            <a href="niods-en.html" class="language-link active" title="English (United States)"
+              ><span class="flag">US</span></a
+            >
+          </li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Change theme">🌙</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="project">
+      <section id="cover" class="nds-reveal" style="background-image: url(../../images/background/bg-section-01.png)">
+        <h1 class="main-title">
+          Building an <span class="text-primary-color">AI agent workflow</span> to create an entire design system,
+          without compromising on quality
+        </h1>
+      </section>
+
+      <section id="context" class="nds-reveal">
+        <div class="float-background"></div>
+        <div class="column">
+          <span>The challenge</span>
+          <p class="description">
+            At Nio, a structural team constraint meant I was the only person responsible for NioDS - a multiplatform
+            design system spanning Web and App (Android and iOS), built on principles of accessibility, responsiveness,
+            and multiproduct support. Keeping all of that at the pace the teams needed was unfeasible for one person
+            relying on so many manual processes.
+          </p>
+          <ul class="description-items">
+            <li><span>Product teams</span><span>5</span></li>
+            <li><span>Platforms</span><span>Web · Android · iOS</span></li>
+            <li><span>Principle</span><span>Multiproduct</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <img src="cover-niods.svg" alt="NioDS cover illustration" />
+        </div>
+      </section>
+
+      <section id="antes" class="nds-reveal" style="padding-bottom: 0">
+        <div class="column">
+          <span>The starting point</span>
+          <h2>Creating a component took 1 to 2 days</h2>
+          <p>
+            Every component went through the entire process manually: researching references, defining usage rules and
+            specs, validating accessibility, writing HTML and React code to test, drafting initial documentation, and
+            reviewing every artifact to ensure consistency. All of it took 1 to 2 days depending on the component's
+            complexity.
+          </p>
+          <img src="fluxo-sem-ia-en.svg" alt="Diagram of the manual component-creation process" />
+        </div>
+      </section>
+
+      <section id="pipeline" class="nds-reveal">
+        <div class="column">
+          <span>The solution</span>
+          <h2>I turned the process into an AI agent workflow</h2>
+          <p>
+            Each step became a specialized agent that carries out the manual task. Between one step and the next there's
+            a validation gate. Nothing moves forward without review and approval. Automation took over the execution of
+            the operational process. The architecture and the design review are still done by a person.
+          </p>
+        </div>
+
+        <div class="column">
+          <div class="principle">
+            <h3>The agents execute</h3>
+            <ul>
+              <li>Benchmark research across reference design systems</li>
+              <li>UX drafts, visual specs, and tokens</li>
+              <li>Contrast checks and accessibility requirements</li>
+              <li>HTML/CSS and React code</li>
+              <li>Terminology, copy, and documentation</li>
+            </ul>
+          </div>
+          <div class="principle">
+            <h3>I decide</h3>
+            <ul>
+              <li>The token architecture and the component contracts</li>
+              <li>What meets the system's principles and what doesn't</li>
+              <li>What gets approved and what goes back for rework</li>
+              <li>The solutions the machine can't reach on its own</li>
+              <li>How a one-off fix becomes a system-level decision</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="evidencia-tag" class="nds-reveal">
+        <div class="float-background"></div>
+        <div class="column">
+          <span>Judgment in the system</span>
+          <h2>Evolving consistently, with no band-aid fixes</h2>
+          <p>
+            The accessibility agent flagged issues with the Tag component. Text and icon didn't meet the minimum AAA
+            contrast. The fix wasn't to swap in whatever color happened to pass. It was to create two new tokens,
+            always-dark and always-light, that solved the Tag and went on to serve other components. The agent surfaced
+            the problem. The token architecture decision was mine.
+          </p>
+        </div>
+        <div class="column">
+          <img src="tag-fail-contrast-en.svg" alt="Tag component failing the contrast check" />
+          <img src="tag-check-contrast-en.svg" alt="Tag component passing the contrast check" />
+        </div>
+      </section>
+
+      <section id="evidencia-skeleton" class="nds-reveal">
+        <div class="float-background"></div>
+        <div class="column">
+          <span>The agents aren't a rubber stamp</span>
+          <h2>It followed the references but strayed from the principles.</h2>
+          <p>
+            The first Skeleton proposal followed the benchmark, but it introduced animations and styles that fell
+            outside the standards already defined for the system. I rejected it and sent the agents back to run again,
+            now with a new direction. The agents follow the design criteria defined in the project, not just the
+            external reference. That's what separates a production line from blind automation.
+          </p>
+        </div>
+        <div class="column">
+          <img src="skeleton-wrong-style-en.svg" alt="Skeleton with styles that break the system's standards" />
+          <img src="skeleton-right-style-en.svg" alt="Skeleton aligned with the system's standards" />
+        </div>
+      </section>
+
+      <section id="heroi-accordion" class="nds-reveal">
+        <div class="float-background"></div>
+        <div class="column">
+          <span>Technical depth</span>
+          <h2>Accessibility without technical complexity</h2>
+          <p>
+            The NioDS style guide is focused on HTML and CSS, without relying on JavaScript. The Accordion is where that
+            weighs most. The first solution used the checkbox hack, but it brought semantic and accessibility problems.
+            The final decision was to use native details and summary - accessible by default, keyboard-operable, and
+            JavaScript-free. The agents helped reach that solution by testing the alternatives against the accessibility
+            principles.
+          </p>
+        </div>
+        <div class="column">
+          <img src="accordion-figma.svg" alt="Accordion component in Figma" />
+          <img src="accordion-code.png" alt="Accordion implemented with native details and summary" />
+        </div>
+      </section>
+
+      <section id="artefatos" class="nds-reveal">
+        <div class="column">
+          <span>The AI's artifacts</span>
+          <h2>Ready-to-use materials</h2>
+
+          <div class="grid-two-columns">
+            <img src="progressbar-ia-document.png" alt="Progress Bar documentation generated by the AI" />
+            <img src="progressbar-figa-component.svg" alt="Progress Bar component in Figma" />
+          </div>
+          <img src="progressbar-final-documentation.png" alt="Final published Progress Bar documentation" />
+        </div>
+      </section>
+
+      <section id="resultado" class="nds-reveal">
+        <div class="float-background"></div>
+        <div class="grid-three-columns">
+          <div class="card items-end padding-xlarge">
+            <h2>9</h2>
+            <p class="quote">Orchestrated steps, each with a specialized agent and a validation gate</p>
+          </div>
+          <div class="card items-end padding-xlarge">
+            <h2 class="text-primary-color">Principles</h2>
+            <p class="quote">Accessibility, responsiveness, code consistency and everything followed a standard.</p>
+          </div>
+          <div class="card items-end padding-xlarge">
+            <h2>&lt; 2<span class="text-primary-color">h</span></h2>
+            <p class="quote">From 1 to 2 days of manual work to under 2 hours end to end</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="contact" class="contact nds-reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="contact-title">Let's talk?</h2>
+        </div>
+        <div class="contact-content">
+          <p class="contact-description">
+            If you're looking for someone who builds design systems end to end, grounded in product design, and
+            engineers those systems with AI, let's talk. I'm open to remote opportunities, both in Brazil and abroad.
+          </p>
+          <div class="contact-info">
+            <a href="mailto:bruno.siilva@hotmail.com" class="contact-link">bruno.siilva@hotmail.com</a>
+            <div class="contact-social">
+              <a
+                href="https://linkedin.com/in/bruno-siilva"
+                target="_blank"
+                class="social-link"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              <a href="http://github.com/brunosiillva/" target="_blank" class="social-link" rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Bruno Silva</p>
+      </div>
+    </footer>
+
+    <div class="nds-nav" id="nds-nav" aria-hidden="false">
+      <button id="nds-prev" aria-label="Previous section" title="Previous section">↑</button>
+      <button id="nds-next" aria-label="Next section" title="Next section">↓</button>
+    </div>
+
+    <script src="../../main.js"></script>
+  </body>
+</html>
